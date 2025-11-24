@@ -1,0 +1,103 @@
+# =================================================================================
+# KONFIGURASI DATA IKAN UNTUK PLUGIN FISH IT!
+# =================================================================================
+#
+# Panduan Struktur:
+# - display_name: Nama yang ditampilkan di game (gunakan kode warna &).
+# - rarity: Tingkat kelangkaan (harus ada di rarity.yml).
+# - price: Harga jual dasar ikan.
+# - min-size & max-size: Ukuran ikan dalam cm (akan diacak).
+# - regions: Daftar lokasi di mana ikan ini bisa ditemukan.
+# - weight: Berat untuk sistem peluang. Semakin besar, semakin sering muncul.
+# - exp: Experience yang didapat saat menangkap ikan ini.
+#
+# Daftar Region:
+# - danau, sungai, pantai, laut_dangkal, laut_dalam, laut_lepas, danau_bawah_tanah, kawah_nether, the_end
+
+fish:
+  # --- COMMON (Berat: 50-40) ---
+  ikan_mas:
+    display_name: "&fIkan Mas"
+    rarity: "COMMON"
+    price: 10
+    min-size: 15
+    max-size: 40
+    regions: ["danau", "sungai"]
+    weight: 50
+    exp: 5
+  lele:
+    display_name: "&7Lele Dumbo"
+    rarity: "COMMON"
+    price: 12
+    min-size: 25
+    max-size: 60
+    regions: ["danau", "sungai"]
+    weight: 48
+    exp: 6
+  nila:
+    display_name: "&aIkan Nila"
+    rarity: "COMMON"
+    price: 15
+    min-size: 18
+    max-size: 45
+    regions: ["danau", "sungai"]
+    weight: 45
+    exp: 7
+  salmon:
+    display_name: "&cSalmon Liar"
+    rarity: "COMMON"
+    price: 18
+    min-size: 30
+    max-size: 75
+    regions: ["sungai"]
+    weight: 42
+    exp: 8
+  # ... (tambahkan ikan COMMON lainnya)
+  
+  # --- UNCOMMON (Berat: 25-15) ---
+  bawal_hitam:
+    display_name: "&8Bawal Hitam"
+    rarity: "UNCOMMON"
+    price: 35
+    min-size: 30
+    max-size: 70
+    regions: ["pantai", "laut_dangkal"]
+    weight: 25
+    exp: 15
+  # ... (tambahkan ikan UNCOMMON lainnya)
+
+  # --- RARE (Berat: 10-5) ---
+  hiu_martil:
+    display_name: "&8Hiu Martil"
+    rarity: "RARE"
+    price: 150
+    min-size: 150
+    max-size: 300
+    regions: ["laut_dalam", "laut_lepas"]
+    weight: 10
+    exp: 50
+  # ... (tambahkan ikan RARE lainnya)
+
+  # --- EPIC (Berat: 4-2) ---
+  paus_pilot:
+    display_name: "&3Paus Pilot"
+    rarity: "EPIC"
+    price: 500
+    min-size: 400
+    max-size: 600
+    regions: ["laut_dalam", "laut_lepas"]
+    weight: 4
+    exp: 150
+  # ... (tambahkan ikan EPIC lainnya)
+
+  # --- LEGENDARY (Berat: 1) ---
+  naga_laut:
+    display_name: "&5&lNaga Laut"
+    rarity: "LEGENDARY"
+    price: 5000
+    min-size: 800
+    max-size: 1500
+    regions: ["laut_dalam", "laut_lepas"]
+    weight: 1
+    exp: 500
+  # ... (tambahkan ikan LEGENDARY lainnya)

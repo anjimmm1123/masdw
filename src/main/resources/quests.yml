@@ -1,0 +1,31 @@
+# Konfigurasi Quest Harian
+# Plugin akan memilih secara acak dari daftar ini setiap hari.
+# - type: Jenis quest (saat ini hanya 'FISH').
+# - target: ID dari ikan yang harus ditangkap (gunakan 'any' untuk ikan apa saja).
+# - amount: Jumlah target yang harus dicapai.
+# - reward: Hadiah quest.
+# - reward_type: Jenis hadiah (EXP atau MONEY).
+# - description: Deskripsi quest yang akan ditampilkan ke pemain.
+
+daily_quests:
+  quest1:
+    type: "FISH"
+    target: "ikan_mas"
+    amount: 10
+    reward: 100
+    reward_type: "EXP"
+    description: "Tangkap 10 Ikan Mas"
+  quest2:
+    type: "FISH"
+    target: "any"
+    amount: 25
+    reward: 500
+    reward_type: "MONEY"
+    description: "Tangkap 25 ikan apa saja"
+  quest3:
+    type: "FISH"
+    target: "bawal_hitam"
+    amount: 5
+    reward: 75
+    reward_type: "EXP"
+    description: "Tangkap 5 Bawal Hitam"

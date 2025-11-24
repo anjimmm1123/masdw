@@ -1,0 +1,31 @@
+# Konfigurasi Umum Plugin FishIt!
+
+# Pengaturan Database
+# Pilih 'sqlite' atau 'mysql'
+database:
+  type: sqlite
+  mysql:
+    host: localhost
+    port: 3306
+    database: minecraft
+    username: root
+    password: password
+
+# Pengaturan Sistem Memancing
+fishing-cooldown: 1500 # Dalam milidetik (1500ms = 1.5 detik)
+
+# Pengaturan Modifikasi Keberuntungan
+weather-modifier:
+  rain: 0.10 # Bonus keberuntungan saat hujan
+  thunder: 0.20 # Bonus keberuntungan saat petir
+
+# Pengaturan GUI
+gui:
+  filler-item: GRAY_STAINED_GLASS_PANE # Item untuk mengisi slot kosong di GUI
+
+# Pengaturan Pesan (jika messages.yml tidak digunakan atau untuk fallback)
+messages:
+  no-permission: "&cAnda tidak memiliki izin untuk melakukan ini!"
+  player-not-found: "&cPemain tidak ditemukan."
+  invalid-number: "&cInput harus berupa angka."
+  inventory-full: "&cInventory Anda penuh!"

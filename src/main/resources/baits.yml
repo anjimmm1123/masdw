@@ -1,0 +1,20 @@
+# Konfigurasi Umpan
+# - luck_modifier: Bonus keberuntungan (desimal, contoh: 0.1 untuk 10%).
+# - charges: Jumlah penggunaan untuk satu item umpan.
+
+baits:
+  worm:
+    display_name: "&fCacing Umum"
+    material: WHEAT_SEEDS
+    luck_modifier: 0.05
+    charges: 10
+  shrimp:
+    display_name: "&bUdang Kecil"
+    material: PRISMARINE_CRYSTALS
+    luck_modifier: 0.15
+    charges: 5
+  golden_bait:
+    display_name: "&6Umpan Emas"
+    material: GOLD_NUGGET
+    luck_modifier: 0.25
+    charges: 3

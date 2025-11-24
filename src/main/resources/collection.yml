@@ -1,0 +1,19 @@
+# Pengaturan untuk GUI Koleksi Ikan (Fishpedia)
+
+# Item yang ditampilkan untuk ikan yang belum pernah ditangkap
+undiscovered_item:
+  material: BARRIER
+  name: "&c???"
+  lore:
+    - "&7Tidak Ditemukan"
+    - "&7Tangkap ikan ini untuk membuka kuncinya!"
+
+# Pengaturan GUI
+gui:
+  # Item untuk navigasi halaman
+  next_page_item:
+    material: ARROW
+    name: "&eHalaman Berikutnya ->"
+  previous_page_item:
+    material: ARROW
+    name: "&e<- Halaman Sebelumnya"

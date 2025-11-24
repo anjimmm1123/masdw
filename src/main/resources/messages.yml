@@ -1,0 +1,45 @@
+# Pesan-pesan yang digunakan oleh plugin FishIt!
+# Gunakan kode warna (&) dan placeholder seperti <player>, <amount>, <price>.
+
+# Pesan Perintah
+command:
+  no_permission: "&cAnda tidak memiliki izin untuk melakukan ini!"
+  player_only: "&cPerintah ini hanya bisa digunakan oleh pemain."
+  player_not_found: "&cPemain '<player>' tidak ditemukan."
+  invalid_number: "&cInput harus berupa angka."
+  fishit:
+    help_header: "&6=== &eBantuan FishIt! &6==="
+    reload_success: "&aKonfigurasi FishIt! telah berhasil di-reload!"
+  sell:
+    no_fish: "&7Anda tidak memiliki ikan yang bisa dijual."
+    success: "&aBerhasil menjual ikan seharga &6<price>&a!"
+    cancelled: "&cPenjualan ikan dibatalkan."
+  shop:
+    opening: "&eMembuka toko memancing..."
+  stats:
+    header: "&6=== &eStatistik Memancing Anda &6==="
+    level: "&7Level: &e<level>"
+    experience: "&7Experience: &e<exp> &7/ &e<exp_next>"
+    total_caught: "&7Total Ikan Ditangkap: &e<total>"
+    total_earnings: "&7Total Penghasilan: &6<earnings>"
+    biggest_catch: "&7Ikan Terbesar: &e<size>cm"
+    collection: "&7Jenis Ikan Ditangkap: &e<caught> &7/ &e<total>"
+  admin:
+    givefish_success: "&aBerhasil memberikan &e<amount>x <fish> &a kepada &e<player>."
+    givefish_fail: "&cGagal memberikan ikan. Fish ID '<fish>' tidak valid atau inventory penuh."
+    setlevel_success: "&aBerhasil mengatur level &e<player> &a menjadi &e<level>."
+    addexp_success: "&aBerhasil menambahkan &e<exp> EXP &a kepada &e<player>."
+
+# Pesan Sistem
+system:
+  new_fish_caught: "&aIkan baru ditangkap: <fish>! Cek koleksi Anda."
+  collection_complete: "&6&lSELAMAT! Anda telah menangkap semua jenis ikan!"
+  level_up: "&aSelamat! Anda naik ke level <level>!"
+  quest_assigned: "&eQuest harian baru: <description> (<progress>)"
+  quest_progress: "&7Progress quest: <description> (<progress>)"
+  quest_completed_money: "&aQuest selesai! Anda mendapatkan &6<reward>&a!"
+  quest_completed_exp: "&aQuest selesai! Anda mendapatkan &e<reward> EXP&a!"
+  bait_applied: "&aBerhasil menerapkan <bait>&a!"
+  bait_fail: "&cUmpan ini tidak bisa diterapkan pada pancing ini."
+  rod_upgrade_success: "&aBerhasil mengupgrade pancing Anda!"
+  not_enough_money: "&cUang Anda tidak cukup!"

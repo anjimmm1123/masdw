@@ -1,0 +1,73 @@
+name: FishIt
+version: '1.0.0'
+main: fish.it.fishIt.FishIt
+api-version: 1.19
+author: NamaAnda
+description: Plugin memancing yang mereplikasi game Fish It! dari Roblox.
+website: https://github.com/usernameanda/fish-it-plugin
+
+depend: [Vault]
+softdepend: [WorldGuard]
+
+commands:
+  fishit:
+    description: Perintah utama plugin FishIt.
+    usage: /<command>
+    permission: fishit.use
+  sellfish:
+    description: Menjual semua ikan di inventory.
+    usage: /<command>
+    permission: fishit.sell
+  shop:
+    description: Membuka toko memancing.
+    usage: /<command>
+    permission: fishit.shop
+  stats:
+    description: Lihat statistik memancing Anda.
+    usage: /<command>
+    permission: fishit.stats
+  fishitadmin:
+    description: Perintah admin untuk FishIt.
+    usage: /<command>
+    permission: fishit.admin
+    aliases: [fiadmin]
+
+permissions:
+  fishit.use:
+    description: Menggunakan perintah dasar FishIt.
+    default: true
+  fishit.sell:
+    description: Mengizinkan menjual ikan.
+    default: true
+  fishit.shop:
+    description: Mengizinkan membuka toko.
+    default: true
+  fishit.stats:
+    description: Mengizinkan melihat statistik.
+    default: true
+  fishit.luck.vip:
+    description: Memberikan bonus keberuntungan VIP.
+    default: false
+  fishit.luck.mvp:
+    description: Memberikan bonus keberuntungan MVP.
+    default: false
+  fishit.admin:
+    description: Izin admin FishIt.
+    default: op
+    children:
+      fishit.admin.reload: true
+      fishit.admin.givefish: true
+      fishit.admin.setlevel: true
+      fishit.admin.addexp: true
+  fishit.admin.reload:
+    description: Mengizinkan me-reload konfigurasi.
+    default: op
+  fishit.admin.givefish:
+    description: Mengizinkan memberikan ikan kepada pemain.
+    default: op
+  fishit.admin.setlevel:
+    description: Mengizinkan mengatur level pemain.
+    default: op
+  fishit.admin.addexp:
+    description: Mengizinkan menambah experience pemain.
+    default: op

@@ -1,0 +1,32 @@
+# Konfigurasi Toko GUI
+# Slot dimulai dari 0 (baris pertama, kolom pertama).
+# - material: Material item yang ditampilkan.
+# - name: Nama item.
+# - price: Harga item.
+# - command: Perintah yang dijalankan saat item diklik (gunakan <player> untuk nama pemain).
+
+items:
+  10:
+    material: FISHING_ROD
+    name: "&aBeli Pancing Pro"
+    lore:
+      - "&7Pancing dengan bonus keberuntungan."
+      - "&6Harga: 5000"
+    price: 5000
+    command: "fishitadmin givefish <player> pro_rod 1"
+  13:
+    material: WHEAT_SEEDS
+    name: "&fBeli Cacing Umum"
+    lore:
+      - "&7Umpan dasar untuk memancing."
+      - "&6Harga: 50"
+    price: 50
+    command: "give <player> wheat_seeds 16"
+  16:
+    material: PRISMARINE_CRYSTALS
+    name: "&bBeli Udang Kecil"
+    lore:
+      - "&7Umpan yang lebih baik."
+      - "&6Harga: 150"
+    price: 150
+    command: "give <player> prismarine_crystals 8"

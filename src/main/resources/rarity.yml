@@ -1,0 +1,23 @@
+  # Konfigurasi Tingkat Kelangkaan (Rarity)
+# - color: Kode warna untuk nama item.
+# - price_multiplier: Pengali harga jual dasar ikan (harga * multiplier).
+
+rarities:
+  COMMON:
+    color: "&f"
+    price_multiplier: 1.0
+  UNCOMMON:
+    color: "&a"
+    price_multiplier: 1.5
+  RARE:
+    color: "&9"
+    price_multiplier: 2.0
+  EPIC:
+    color: "&5"
+    price_multiplier: 3.0
+  LEGENDARY:
+    color: "&6"
+    price_multiplier: 5.0
+  MYTHIC:
+    color: "&c"
+    price_multiplier: 10.0

@@ -1,0 +1,31 @@
+# Konfigurasi Pancing
+# - material: Material dari pancing (harus FISHING_ROD).
+# - luck_multiplier: Pengali keberuntungan tambahan.
+# - durability: Jumlah kali digunakan sebelum pancing rusak (0 untuk tak terbatas).
+# - price: Harga untuk membeli/mengupgrade pancing ini.
+
+rods:
+  basic_rod:
+    display_name: "&fPancing Dasar"
+    material: FISHING_ROD
+    luck_multiplier: 1.0
+    durability: 0
+    price: 0
+  pro_rod:
+    display_name: "&aPancing Pro"
+    material: FISHING_ROD
+    luck_multiplier: 1.25
+    durability: 500
+    price: 5000
+  master_rod:
+    display_name: "&6Pancing Master"
+    material: FISHING_ROD
+    luck_multiplier: 1.5
+    durability: 1000
+    price: 20000
+
+# Urutan upgrade pancing (sesuai dengan ID di atas)
+rod_upgrade_order:
+  - "basic_rod"
+  - "pro_rod"
+  - "master_rod"
